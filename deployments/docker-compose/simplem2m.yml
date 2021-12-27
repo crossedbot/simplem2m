@@ -1,0 +1,11 @@
+services:
+    mongo:
+        image: mongo:latest
+    simplem2m:
+        image: simplem2m:latest
+        depends_on:
+            - mongo
+        links:
+            - mongo
+        ports:
+            - "${PORT}:8080"
