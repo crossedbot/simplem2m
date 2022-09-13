@@ -1,5 +1,5 @@
-ARG OS_NICKNAME=buster
-ARG OS=debian:buster-slim
+ARG OS_NICKNAME=bullseye
+ARG OS=debian:bullseye-slim
 ARG ARCH=x64
 
 FROM ${OS}
